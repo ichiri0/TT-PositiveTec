@@ -13,7 +13,6 @@ ACTOR_2_URL = settings.ACTOR_2_URL
 
 
 async def main():
-    # Основной код для поиска расстояния между Джорджем Клуни и Джулией Робертс
     movie_processing = MovieProcessing()
     distance = await movie_processing.find_movie_distance(ACTOR_1_URL, ACTOR_2_URL)
     graph = await build_graph([ACTOR_1_URL, ACTOR_2_URL])
